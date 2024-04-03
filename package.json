@@ -1,0 +1,22 @@
+{
+  "name": "tcp_reagistration_project_v1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Yashraj Das",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "events": "^3.3.0",
+    "express": "^4.19.1",
+    "msnodesqlv8": "^4.1.2",
+    "mssql": "^5.1.5",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.1.0",
+    "tedious": "^18.1.0"
+  }
+}

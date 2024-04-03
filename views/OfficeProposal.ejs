@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('./includes/head'); -%>
+        <title>TCP</title>
+</head>
+
+<body>
+    <%- include('./includes/master'); -%>
+
+        <div class="col " style="background-color: rgb(255, 255, 255); margin-top: 100px;">
+            <div class="title fw-bold text-center"
+                style="background-color: #094E7F; padding: 10px; margin-top: 100px; color: white;">Office Proposal by JE
+            </div>
+            <div class="text text-start fst-italic"
+                style="background-color: rgb(237, 237, 237); padding-top: 10px; font-size: small; color: rgb(0, 117, 243);">
+                <ul class="breadcrumb" style="margin: 0;">
+                    <li><a href="#">UC Site Report</a></li>
+                    <li>New</li>
+                </ul>
+            </div>
+            <div class="text text-end fst-italic mb-3"
+                style="background-color: rgb(237, 237, 237); padding-bottom: 10px; font-size: small; color: rgb(0, 117, 243);">
+                <span>Change Role</span><span class="space">|</span>
+                <span>Unit Converter</span><span class="space">|</span>
+                <span>Help?</span>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="form-control" style="background-color: rgb(237, 237, 237);">
+                        <div class="row mb-3" style="display: flex; justify-content: center;">
+                            <div class="col-md-4">
+                                <div class="mb-3 row">
+                                    <label for="inputPassword" class="col-sm-6 col-form-label">Office Proposal
+                                        <code>*</code></label>
+                                </div>
+                            </div>
+                            <div class="col-md-6  ">
+                                <div class="form-check col-md-12">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1" checked>
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Proposal for sending complaint to police for investigation and registration of
+                                        FIR
+                                    </label>
+                                </div>
+                                <div class="form-check col-md-12">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2">
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Updated Site Report
+                                    </label>
+                                </div>
+                                <div class="form-check col-md-12">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault3">
+                                    <label class="form-check-label" for="flexRadioDefault3">
+                                        Proposal for issue of show causes notice
+                                    </label>
+                                </div>
+                                <div class="form-check col-md-12">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault4">
+                                    <label class="form-check-label" for="flexRadioDefault4">
+                                        Other, Specify
+                                    </label>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <hr>
+                        <div class="data" id="ShowCauseNotice">
+                            <div class="row mb-3">
+                                <div class="title fw-bold text-center"
+                                    style="background-color: #094E7F; padding: 10px; color: white;">
+                                    Show Causes Notice
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    Show Cause Notice to be Issued for Violation
+                                </div>
+                            </div>
+                            <div class="row d-md-flex">
+                                <div class="col-md-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Act No 41 of 1963
+                                        </label>
+                                    </div>
+                                   
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-check">
+
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Violation of section
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8 d-md-flex">
+                                            <div class="form-check">
+                                                
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> 
+                                           
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    3
+                                                </label> </div>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    6
+                                                </label>
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> 
+                                            </div>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    7
+                                                </label>
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> 
+                                            </div>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    8
+                                                </label>
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> 
+                                            </div>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    10
+                                                </label>
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="row d-md-flex">
+                                <div class="col-md-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Act No 8 of 1975
+                                        </label>
+                                    </div>
+                                   
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-check">
+
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Violation of section
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8 d-md-flex">
+                                            <div class="form-check">
+                                                
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> 
+                                           
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    7(ii)
+                                                </label> </div>
+                                           
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="row d-md-flex">
+                                <div class="col-md-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Act No 1 of 1952
+                                        </label>
+                                    </div>
+                                   
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-check">
+
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Violation of section
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8 d-md-flex">
+                                            <div class="form-check">
+                                                
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> 
+                                           
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    5
+                                                </label> </div>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    6
+                                                </label>
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> 
+                                            </div>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    7
+                                                </label>
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> 
+                                            </div>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    11
+                                                </label>
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> 
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="row d-md-flex">
+                                <div class="col-md-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">Others, Specify
+                                        </div>
+
+                                        </label>
+                                    </div>
+                                   
+                                
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-check">
+
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Violation of section
+                                                </label>
+                                            </div>
+                                        </div></div>
+                                        <!-- <div class="col-md-8 d-md-flex">
+                                            <div class="form-check">
+                                                
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> 
+                                           
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    3
+                                                </label> </div>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    6
+                                                </label>
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> 
+                                            </div>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    7
+                                                </label>
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> 
+                                            </div>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    0
+                                                </label>
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> 
+                                            </div>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    10
+                                                </label>
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> 
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="data" id="LodgingofFIR">
+                                <div class="row mb-3">
+                                    <div class="title fw-bold text-center"
+                                        style="background-color: #094E7F; padding: 10px; color: white;">
+                                        Lodging of FIR
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        Lounge FIR Under Act/Section
+                                    </div>
+                                </div>
+                                <div class="row d-md-flex">
+                                    <div class="col-md-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Select Act No 41 of 1963
+                                            </label>
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-check">
+    
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Violation of section
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8 d-md-flex">
+                                                <div class="form-check">
+                                                    
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> 
+                                               
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        3
+                                                    </label> </div>
+                                                <div class="form-check">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        6
+                                                    </label>
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> 
+                                                </div>
+                                                <div class="form-check">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        7
+                                                    </label>
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> 
+                                                </div>
+                                                <div class="form-check">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        8
+                                                    </label>
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> 
+                                                </div>
+                                                <div class="form-check">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        10
+                                                    </label>
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="row d-md-flex">
+                                    <div class="col-md-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Select Act No 8 of 1975
+                                            </label>
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-check">
+    
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Violation of section
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8 d-md-flex">
+                                                <div class="form-check">
+                                                    
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> 
+                                               
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        7(ii)
+                                                    </label> </div>
+                                               
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="row d-md-flex">
+                                    <div class="col-md-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Select Act No 1 of 1952
+                                            </label>
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-check">
+    
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Violation of section
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8 d-md-flex">
+                                                <div class="form-check">
+                                                    
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> 
+                                               
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        5
+                                                    </label> </div>
+                                                <div class="form-check">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        6
+                                                    </label>
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> 
+                                                </div>
+                                                <div class="form-check">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        7
+                                                    </label>
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> 
+                                                </div>
+                                                <div class="form-check">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        11
+                                                    </label>
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> 
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="row d-md-flex">
+                                    <div class="col-md-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">Others, Specify
+                                            </div>
+    
+                                            </label>
+                                        </div>
+                                       
+                                    
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-check">
+    
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Violation of section
+                                                    </label>
+                                                </div>
+                                            </div></div>
+                                           
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            Ground for lodging FIR against the seller under sec 7(i) and/ or 7(ii) of act no. * of 1975
+                                        </div>
+                                        <div class="col-md-6 d-block">
+                                            <div class="mb-3">
+                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Ground for lodging FIR against the seller under sec ?(ii) "></textarea>
+                                              </div>
+                                              <div class="mb-3">
+                                                <input class="form-control" type="file" id="formFile">
+                                              </div>
+                                        </div>
+                                    </div>    
+                                </div>
+                            <div class="data" id="US_report">
+
+
+                               
+
+
+                            </div>
+                            <div class="data" id="Specify">
+
+
+                               
+
+
+
+
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3 row">
+                                        <label for="inputPassword" class="col-sm-4 col-form-label">JE
+                                            Remarks/Proposal</label>
+                                        <div class="col-sm-8">
+                                            <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                rows="3"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-grid gap-2 mb-3 d-md-flex justify-content-md-center">
+                                <button type="button" class="btn btn-primary">Back</button>
+                                <button type="button" class="btn btn-primary">Save</button>
+                                <button type="button" class="btn btn-primary">Submit</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+        <%- include('./includes/footer'); -%>
+            <script src="./js/main.js" type="module"></script>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const showCauseNoticeRadio = document.getElementById('flexRadioDefault3');
+                    const lodgingFIRRaido = document.getElementById('flexRadioDefault1');
+                    const updatedSiteReportRadio = document.getElementById('flexRadioDefault2');
+                    const otherSpecifyRadio = document.getElementById('flexRadioDefault4');
+            
+                    const showCauseNoticeDiv = document.getElementById('ShowCauseNotice');
+                    const lodgingFIRDiv = document.getElementById('LodgingofFIR');
+                    const updatedSiteReportDiv = document.getElementById('US_report');
+                    const specifyDiv = document.getElementById('Specify');
+            
+                    function hideAll() {
+                        showCauseNoticeDiv.style.display = 'none';
+                        lodgingFIRDiv.style.display = 'none';
+                        updatedSiteReportDiv.style.display = 'none';
+                        specifyDiv.style.display = 'none';
+                    }
+            
+                    function showShowCauseNotice() {
+                        hideAll();
+                        showCauseNoticeDiv.style.display = 'block';
+                    }
+            
+                    function showLodgingFIR() {
+                        hideAll();
+                        lodgingFIRDiv.style.display = 'block';
+                    }
+            
+                    function showUpdatedSiteReport() {
+                        hideAll();
+                        updatedSiteReportDiv.style.display = 'block';
+                    }
+            
+                    function showSpecify() {
+                        hideAll();
+                        specifyDiv.style.display = 'block';
+                    }
+            
+                    showCauseNoticeRadio.addEventListener('click', showShowCauseNotice);
+                    lodgingFIRRaido.addEventListener('click', showLodgingFIR);
+                    updatedSiteReportRadio.addEventListener('click', showUpdatedSiteReport);
+                    otherSpecifyRadio.addEventListener('click', showSpecify);
+            
+                    // Initially show the default section based on the initially selected radio button
+                    if (showCauseNoticeRadio.checked) {
+                        showShowCauseNotice();
+                    } else if (lodgingFIRRaido.checked) {
+                        showLodgingFIR();
+                    } else if (updatedSiteReportRadio.checked) {
+                        showUpdatedSiteReport();
+                    } else if (otherSpecifyRadio.checked) {
+                        showSpecify();
+                    }
+                });
+            </script>
+</body>
+
+</html>

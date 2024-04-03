@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('./includes/head'); -%>
+        <title>TCP</title>
+</head>
+
+<body>
+    <%- include('./includes/master'); -%>
+
+        <div class="col " style="background-color: rgb(255, 255, 255); margin-top: 100px;">
+            <div class="title fw-bold text-center"
+                style="background-color: #094E7F; padding: 10px; margin-top: 100px; color: white;">Filing of FIR, Filing of Challan, Follow-up of Case:
+            </div>
+            <div class="text text-start fst-italic"
+                style="background-color: rgb(237, 237, 237); padding-top: 10px; font-size: small; color: rgb(0, 117, 243);">
+                <ul class="breadcrumb" style="margin: 0;">
+                    <li><a href="#">UC Site Report</a></li>
+                    <li>New</li>
+                </ul>
+            </div>
+            <div class="text text-end fst-italic mb-3"
+                style="background-color: rgb(237, 237, 237); padding-bottom: 10px; font-size: small; color: rgb(0, 117, 243);">
+                <span>Change Role</span><span class="space">|</span>
+                <span>Unit Converter</span><span class="space">|</span>
+                <span>Help?</span>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="form-control" style="background-color: rgb(237, 237, 237);">
+                        <div class="row mb-3" style="display: flex;">
+                            <div class="col-md-4">
+                                <div class="mb-3 row">
+                                    <h6>details of FIR</h6>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        
+                        <hr>
+                        <div class="data" id="dataDiv">
+                        
+                            <div class="row mb-3">
+                                <div class="col-md-12">
+                                    <div class="mb-3 row">
+                                        <h4>Details to be updated</h4>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        
+                            <div class="row mb-3">
+                                
+                                <div class="col-md-12">
+                                    <div class="mb-3 row">
+                                        <div class="col-sm-6 d-md-flex">
+                                            <label for="inputPassword" class="col-sm-6 col-form-label">FIR Registered by Police</label>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioUrban" id="flexRadioUrban1" checked>
+                                                <label class="form-check-label" for="flexRadioUrban1">
+                                                    Yes
+                                                </label>
+                                              </div>
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioUrban" id="flexRadioUrban2" >
+                                                <label class="form-check-label" for="flexRadioUrban2">
+                                                No
+                                                </label>
+                                              </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="mb-3 row">
+                                                <label for="inputPassword" class="col-sm-2 col-form-label">FIR No. :<code>*</code></label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="inputPassword">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                
+                                <div class="col-md-6">
+                                    <div class="mb-3 row">
+                                        <label for="inputPassword" class="col-sm-6 col-form-label">Challan Put up in court</label>
+                                        <div class="col-sm-6 d-md-flex">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioOrder" id="flexRadioOrder1" checked>
+                                                <label class="form-check-label" for="flexRadioOrder1">
+                                                    Yes
+                                                </label>
+                                              </div>
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioOrder" id="flexRadioOrder2" >
+                                                <label class="form-check-label" for="flexRadioOrder2">
+                                                No
+                                                </label>
+                                              </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                           
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <div class="mb-3 row">
+                                        <label for="inputPassword" class="col-sm-6 col-form-label">Petitioner(s)/Complainant</label>
+                                        <div class="col-sm-6">
+                                            <input type="email" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <div class="mb-3 row">
+                                        <label for="inputPassword" class="col-sm-6 col-form-label">Respondent(s)/Accused</label>
+                                        <div class="col-sm-6">
+                                            <input type="email" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <div class="mb-3 row">
+                                        <label for="inputPassword" class="col-sm-6 col-form-label">Main Issue Involved</label>
+                                        <div class="col-sm-6">
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-md-4">
+                                    <div class="mb-3 row">
+                                        <form action="/action_page.php">
+                                            <label for="birthday" class="col-sm-5 col-form-label">Next Hearing Date:</label>
+                                            <input type="date" id="hearing" name="hearing">
+                                        </form>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="mb-3 row">
+                                        <label for="inputPassword" class="col-sm-4 col-form-label">Case Status :<code>*</code></label>
+                                        <div class="col-sm-8">
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option value="1">Approved</option>
+                                                <option selected>Pending</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-4">
+                                    <div class="mb-3 row">
+                                        <form action="/action_page.php">
+                                                <label for="birthday" class="col-sm-5 col-form-label">Latest Status On :</label>
+                                                <input type="date" id="hearing" name="hearing">
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="mb-3 row">
+                                        <label for="inputPassword" class="col-sm-4 col-form-label">Latest Status :<code>*</code></label>
+                                        <div class="col-sm-8">
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                            <div class="row mb-3">
+                                
+                                <div class="col-md-12">
+                                    <div class="mb-3 row">
+                                        <div class="col-sm-4 d-md-flex">
+                                            <label for="inputPassword" class="col-sm-5 col-form-label">Orders Issued :</label>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioUrban" id="flexRadioUrban1" checked>
+                                                <label class="form-check-label" for="flexRadioUrban1">
+                                                    Yes
+                                                </label>
+                                              </div>
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioUrban" id="flexRadioUrban2" >
+                                                <label class="form-check-label" for="flexRadioUrban2">
+                                                No
+                                                </label>
+                                              </div>
+                                        </div>
+                                        <div class="col-sm-4 d-md-flex">
+                                            <label for="inputPassword" class="col-sm-4 col-form-label">Final Orders :</label>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioUrban" id="flexRadioUrban1" checked>
+                                                <label class="form-check-label" for="flexRadioUrban1">
+                                                    Yes
+                                                </label>
+                                              </div>
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioUrban" id="flexRadioUrban2" >
+                                                <label class="form-check-label" for="flexRadioUrban2">
+                                                No
+                                                </label>
+                                              </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-md-4">
+                                    <div class="mb-3 row">
+
+                                        <form action="/action_page.php">
+                                            <label for="birthday" class="col-sm-5 col-form-label">Date of Order :</label>
+                                            <input type="date" id="hearing" name="hearing">
+                                        </form>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="mb-3 row">
+
+                                        <form action="/action_page.php">
+                                            <label for="birthday" class="col-sm-5 col-form-label">Date of Recipients of Order :</label>
+                                            <input type="date" id="hearing" name="hearing">
+                                        </form>
+                                        
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="row mb-3">
+                                <div class="col-md-8">
+                                    <div class="mb-3 row">
+                                        <label for="inputPassword" class="col-sm-4 col-form-label">Operative part of Order :<code>*</code></label>
+                                        <div class="col-sm-8">
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                
+                                <div class="col-md-12">
+                                    <div class="mb-3 row">
+                                        <div class="col-sm-4 d-md-flex">
+                                            <label for="inputPassword" class="col-sm-5 col-form-label">Orders in Favour :</label>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioUrban" id="flexRadioUrban1" checked>
+                                                <label class="form-check-label" for="flexRadioUrban1">
+                                                    Yes
+                                                </label>
+                                              </div>
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioUrban" id="flexRadioUrban2" >
+                                                <label class="form-check-label" for="flexRadioUrban2">
+                                                No
+                                                </label>
+                                              </div>
+                                        </div>
+
+                                        <div class="col-md-8">
+                                            <div class="mb-3 row">
+                                                <label for="inputPassword" class="col-sm-3 col-form-label">Full text of orders :<code>*</code></label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" class="form-control" id="inputPassword">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <hr>
+                        <div class="row mb-3">
+                            <div class="col-md-5">
+                                <div class="mb-3 row">
+
+                                    <form action="/action_page.php">
+                                        <label for="birthday" class="col-sm-6 col-form-label">Due date for complaince of Order :</label>
+                                        <input type="date" id="hearing" name="hearing">
+                                    </form>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-sm-5 d-md-flex">
+                                <label for="inputPassword" class="col-sm-5 col-form-label">Orders compiled with or not :</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioUrban" id="flexRadioUrban1" checked>
+                                    <label class="form-check-label" for="flexRadioUrban1">
+                                        Yes
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioUrban" id="flexRadioUrban2" >
+                                    <label class="form-check-label" for="flexRadioUrban2">
+                                    No
+                                    </label>
+                                  </div>
+                            </div>
+
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-sm-7 d-md-flex">
+                                <label for="inputPassword" class="col-sm-4 col-form-label">Orders compiled with or not :</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioUrban" id="flexRadioUrban1" checked>
+                                    <label class="form-check-label" for="flexRadioUrban1">
+                                        Yes
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioUrban" id="flexRadioUrban2" >
+                                    <label class="form-check-label" for="flexRadioUrban2">
+                                    No
+                                    </label>
+                                  </div>
+                            </div>
+
+                        </div>
+
+                        <hr>
+                            <div class="d-grid gap-2 mb-3 d-md-flex justify-content-md-center">
+                                <button type="button" class="btn btn-primary">Back</button>
+                                <button type="button" class="btn btn-primary">Save</button>
+                            </div>
+                            
+                        </div>
+</div> </div>
+                    </div>
+
+                </div>
+            </div>
+            <%- include('./includes/footer'); -%>
+                <script src="./js/main.js" type="module"></script>
+
+                <script>
+                    // Get the radio buttons
+                    const developmentRadioButton = document.getElementById('flexRadioDefault1');
+                    const independentRadioButton = document.getElementById('flexRadioDefault2');
+                    const dataDiv = document.getElementById('dataDiv');
+                                
+                    // Add event listener to the radio buttons
+                    developmentRadioButton.addEventListener('change', function() {
+                        // Show the data div when "Development Works in U/A Colony" is selected
+                        if (this.checked) {
+                            dataDiv.style.display = 'block';
+                        }
+                    });
+                    
+                    independentRadioButton.addEventListener('change', function() {
+                        // Hide the data div when "Independent U/A Construction" is selected
+                        if (this.checked) {
+                            dataDiv.style.display = 'none';
+                        }
+                    });
+                </script>
+</body>
+
+</html>

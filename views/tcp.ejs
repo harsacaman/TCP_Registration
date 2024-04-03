@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('./includes/head'); -%>
+    <title>TCP</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</head>
+<body>
+    <%- include('./includes/master'); -%>
+    
+    <div class="col " style="background-color: rgb(255, 255, 255); margin-top: 100px;">
+        <div class="title fw-bold text-center"
+            style="background-color: #094E7F; padding: 10px; margin-top: 100px; color: white;">Unauthorized Construction (UC) Site Inspection Report
+        </div>
+        <div class="text text-start fst-italic"
+            style="background-color: rgb(237, 237, 237); padding-top: 10px; font-size: small; color: rgb(0, 117, 243);">
+            <ul class="breadcrumb" style="margin: 0;">
+                <li><a href="#">UC Site Report</a></li>
+                <li>New</li>
+            </ul>
+        </div>
+        <div class="text text-end fst-italic mb-3"
+            style="background-color: rgb(237, 237, 237); padding-bottom: 10px; font-size: small; color: rgb(0, 117, 243);">
+            <span>Change Role</span><span class="space">|</span>
+            <span>Unit Converter</span><span class="space">|</span>
+            <span>Help?</span>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <form id="formData" action="/sumit-form" method="post">
+                <div class="form-control" style="background-color: rgb(237, 237, 237);">
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <div class="mb-3 row">
+                                <label for="dateOfdetection" class="col-sm-4 col-form-label">Date Of
+                                    Detection<code>*</code></label>
+                                <div class="col-sm-8">
+                                    <input type="date" class="form-control" id="dateOfdetection" name="DateOfDetection">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3 row">
+                                <label for="dateOfreport" class="col-sm-4 col-form-label">Date Of
+                                    Report<code>*</code></label>
+                                <div class="col-sm-8">
+                                    <input type="date" class="form-control" id="dateOfreport" name="DateOfReport">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-12">
+                            <div class="mb-3 row">
+                                <label for="inputPassword"
+                                    class="col-sm-2 col-form-label">District<code>*</code></label>
+                                <div class="col-sm-10">
+                                    <select class="form-select" name="DistrictID" aria-label="Default select example">
+                                        <option selected>Select The District .... </option>
+                                        <option value="1">Ambala</option>
+                                        <option value="2">Bhiwani</option>
+                                        <option value="3">Charkhi Dadri</option>
+                                        <option value="4">Faridabad</option>
+                                        <option value="5">Fatehpur</option>
+                                        <option value="6">Gurgaon</option>
+                                        <option value="7">Hisser</option>
+                                        <option value="8">Jhajjar</option>
+                                        <option value="9">Jind</option>
+                                        <option value="10">Kaithal</option>
+                                        <option value="11">Karnal</option>
+                                        <option value="12">Kurukshetra</option>
+
+
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <div class="mb-3 row">
+                                <label for="controlledArea" class="col-sm-4 col-form-label">Controlled Area</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="controlledArea" name="ControledArea" >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3 row">
+                                <label for="urbanArea" class="col-sm-4 col-form-label">Urban Area</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="urbanArea" name="UrbanArea">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <div class="mb-3 row">
+                                <label for="ownerName" class="col-sm-4 col-form-label">Owner's Name</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="ownerName" name="OwnerName">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3 row">
+                                <label for="ownerAddress" class="col-sm-4 col-form-label">Owner's Address</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="ownerAddress" name="OwnerAddress">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <div class="mb-3 row">
+                                <label for="locationDetails" class="col-sm-4 col-form-label">Location Details<code>*</code></label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="locationDetails" name="LocationDetails">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3 row">
+                                <label for="areaOfsite" class="col-sm-4 col-form-label">Area Of Site<code>*</code></label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="areaOfsite" name="AreaOfSite">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <div class="mb-3 row">
+                                <label for="devPlan" class="col-sm-4 col-form-label">Dev Paln<code>*</code></label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="devPlan" name="DevelopmentPlan">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3 row">
+                                <label for="oldFile" class="col-sm-4 col-form-label">Old File ID<code>*</code></label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="oldFile" >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <div class="mb-3 row">
+                                <label for="subJect" class="col-sm-4 col-form-label" >Subject<code>*</code></label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="subJect" name="Subject">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3 row">
+                                <label for="inputPassword" class="col-sm-4 col-form-label">Attachment<code>*</code></label>
+                                <div class="col-sm-8">
+                                    <input class="form-control" type="file" id="formFile" name="AttachmentFile">
+                                      
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-grid gap-2 mb-3 d-md-flex justify-content-md-center">
+                        <!-- Button trigger modal -->
+                        <button type="submit" class="btn btn-primary"  >Save</button>
+                        <button type="button" class="btn btn-success" id="updateButton" style="display: none;">Update</button>
+                        
+                    </div>
+
+
+
+                </div>
+            </form>
+            
+                <div>
+                    <br>
+                     <!-- Table start -->
+                <div id='formData' class="row mb-3">
+                    <div class="col-md-12  table-responsive">
+                        <table class="table  table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Date Of Detection</th>
+                                    <th>Date Of Report</th>
+                                    <th>District</th>
+                                    <th>Controlled Area</th>
+                                    <th>Urban Area</th>
+                                    <th>Owner's Name</th>
+                                    <th>Owner's Address</th>
+                                    <th>Location Details</th>
+                                    <th>Area Of Site</th>
+                                    <th>Dev Plan</th>
+                                    <th>Subject</th>
+                                    <th>Action</th
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                 <!-- Here data come dynamicaly from getFormData api -->
+                                  <!-- <td>
+                                    <button type="button" class="btn btn-primary">Edit</button>
+                                    <button type="button" class="btn btn-danger">Delete</button>
+                                </td> -->
+                                </tr>
+                                <tr>
+                                 <!-- Here data is come dynamicaly from getFormData api  -->
+                                    <!-- <td>
+                                        <button type="button" class="btn btn-primary">Edit</button>
+                                        <button type="button" class="btn btn-danger">Delete</button>
+                                    </td> -->
+                                  </tr>
+                              </tbody>
+                          </table>
+                    </div>
+                 </div>
+                </br>
+                <!-- Table end-->
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <%- include('./includes/footer'); -%>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/main.js" type="module"></script>
+   
+     <!-- Include jQuery -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <!-- Include Bootstrap JS -->
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('./includes/head'); -%>
+        <title>TCP</title>
+</head>
+
+<body>
+    <%- include('./includes/master'); -%>
+
+        <div class="col " style="background-color: rgb(255, 255, 255); margin-top: 100px;">
+            <div class="title fw-bold text-center"
+                style="background-color: #094E7F; padding: 10px; margin-top: 100px; color: white;">Details of Permission From Competent Authority
+            </div>
+            <div class="text text-start fst-italic"
+                style="background-color: rgb(237, 237, 237); padding-top: 10px; font-size: small; color: rgb(0, 117, 243);">
+                <ul class="breadcrumb" style="margin: 0;">
+                    <li><a href="#">UC Site Report</a></li>
+                    <li>New</li>
+                </ul>
+            </div>
+            <div class="text text-end fst-italic mb-3"
+                style="background-color: rgb(237, 237, 237); padding-bottom: 10px; font-size: small; color: rgb(0, 117, 243);">
+                <span>Change Role</span><span class="space">|</span>
+                <span>Unit Converter</span><span class="space">|</span>
+                <span>Help?</span>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="form-control" style="background-color: rgb(237, 237, 237);">
+                        <div class="row mb-3" style="display: flex; justify-content: center;">
+                            <div class="col-md-12">
+                                <div class="mb-3 row">
+                                    <label for="inputPassword" class="col-sm-6 col-form-label">Any Permission From Competent
+                                        Authority For Undertaking Construction<code>*</code></label>
+                                    <div class="col-sm-6 d-md-flex">
+                                        <div class="form-check col-md-6">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                Yes
+                                            </label>
+                                          </div>
+                                          <div class="form-check col-md-6">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                            No
+                                            </label>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <hr>
+                        <div class="data" id="dataDiv">
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <div class="mb-3 row">
+                                        <label for="inputPassword" class="col-sm-4 col-form-label">If YES, CaseID<code>*</code></label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control" id="inputPassword">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <div class="mb-3 row">
+                                        <label for="inputPassword" class="col-sm-4 col-form-label">Nature Of Violation From Such Approval<code>*</code></label>
+                                        <div class="col-sm-8">
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Open this select menu</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                              </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                               
+                         </div>
+                         <div class="col-md-6">
+                            <div class="mb-3 row">
+                                <label for="inputPassword" class="col-sm-4 col-form-label">Final Remarks</label>
+                                <div class="col-sm-8">
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="d-grid gap-2 mb-3 d-md-flex justify-content-md-center">
+                            <button type="button" class="btn btn-primary">Back</button>
+                            <button type="button" class="btn btn-primary">Save as Draft</button>
+                        </div>
+                        </div></div>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+            <%- include('./includes/footer'); -%>
+                <script src="./js/main.js" type="module"></script>
+
+                <script>
+                    // Get the radio buttons
+                    const developmentRadioButton = document.getElementById('flexRadioDefault1');
+                    const independentRadioButton = document.getElementById('flexRadioDefault2');
+                    const dataDiv = document.getElementById('dataDiv');
+                                
+                    // Add event listener to the radio buttons
+                    developmentRadioButton.addEventListener('change', function() {
+                        // Show the data div when "Development Works in U/A Colony" is selected
+                        if (this.checked) {
+                            dataDiv.style.display = 'block';
+                        }
+                    });
+                    
+                    independentRadioButton.addEventListener('change', function() {
+                        // Hide the data div when "Independent U/A Construction" is selected
+                        if (this.checked) {
+                            dataDiv.style.display = 'none';
+                        }
+                    });
+                </script>
+</body>
+
+</html>

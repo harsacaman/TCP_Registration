@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('./includes/head'); -%>
+    <title>TCP</title>
+</head>
+<body>
+    <%- include('./includes/master'); -%>
+    
+    <div class="col " style="background-color: rgb(255, 255, 255); margin-top: 100px;">
+        <div class="title fw-bold text-center"
+            style="background-color: #094E7F; padding: 10px; margin-top: 100px; color: white;">Revenue Estate With Number Of Rectangles / Khasras
+        </div>
+        <div class="text text-start fst-italic"
+            style="background-color: rgb(237, 237, 237); padding-top: 10px; font-size: small; color: rgb(0, 117, 243);">
+            <ul class="breadcrumb" style="margin: 0;">
+                <li><a href="#">UC Site Report</a></li>
+                <li>New</li>
+            </ul>
+        </div>
+        <div class="text text-end fst-italic mb-3"
+            style="background-color: rgb(237, 237, 237); padding-bottom: 10px; font-size: small; color: rgb(0, 117, 243);">
+            <span>Change Role</span><span class="space">|</span>
+            <span>Unit Converter</span><span class="space">|</span>
+            <span>Help?</span>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="form-control" style="background-color: rgb(237, 237, 237);">
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <div class="mb-3 row">
+                                <label for="inputPassword" class="col-sm-4 col-form-label">Revenue Estate<code>*</code></label>
+                                <div class="col-sm-8">
+                                    <input type="date" class="form-control" id="inputPassword">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3 row">
+                                <label for="inputPassword" class="col-sm-4 col-form-label">Type<code>*</code></label>
+                                <div class="col-sm-8 d-flex" style="align-items: center;">
+                                    <div class="form-check" style="margin-right: 5px;">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                          C
+                                        </label>
+                                      </div>
+                                      <div class="form-check" style="margin-right: 5px;">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                          UP
+                                        </label>
+                                      </div>
+                                      <div class="form-check" style="margin-right: 5px;">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                                        <label class="form-check-label" for="flexRadioDefault3">
+                                          UK
+                                        </label>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                       <div class="col-md-12" style="display: flex; justify-content: center;">
+                        <button type="button" class="btn btn-primary">Add</button>
+                       </div>
+                    </div>
+<!-- Table start -->
+                    <div class="row mb-3">
+                        <div class="col-md-12" >
+                            <table class="table  table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                      <th scope="col">Sr.No</th>
+                                      <th scope="col">Owner Name</th>
+                                      <th scope="col">Revenue Estate</th>
+                                      <th scope="col">Hadbast No.</th>
+                                      <th scope="col">Type</th>
+                                      <th scope="col">No. Of Khasra</th>
+                                      <th scope="col"></th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row">1</th>
+                                      <td>Sanjay</td>
+                                      <td>Didwari(72)</td>
+                                      <td>72</td>
+                                      <td>Type Name</td>
+                                      <td>00</td>
+                                      <td><button type="button" class="btn btn-primary">Delete</button></td>
+                                    </tr>
+                                    
+                                  </tbody>
+                              </table>
+                        </div>
+                     </div>
+<!-- Table end-->
+                     <div class="row mb-3">
+                        <div class="col-md-12">
+                            <div class="mb-3 row" id="heading">
+                               <div class="heading text-center"> Rectangle Number With Number of Kilas </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <div class="mb-3 row">
+                                <label for="inputPassword" class="col-sm-4 col-form-label">Rectangle Number<code>*</code></label>
+                                <div class="col-sm-8">
+                                    <input type="date" class="form-control" id="inputPassword">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3 row">
+                                <label for="inputPassword" class="col-sm-4 col-form-label"> No. Of Kilas<code>*</code></label>
+                                <div class="col-sm-8">
+                                    <input type="date" class="form-control" id="inputPassword">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-12" style="display: flex; justify-content: center;">
+                         <button type="button" class="btn btn-primary">Add</button>
+                        </div>
+                     </div>
+
+                    <!-- Table start -->
+                    <div class="row mb-3">
+                        <div class="col-md-12" >
+                            <table class="table  table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                      <th scope="col">Sr.No</th>
+                                      <th scope="col">Owner Name</th>
+                                      <th scope="col">Revenue Estate</th>
+                                      <th scope="col">Rectangle Number</th>
+                                      <th scope="col">No. Of Kilas</th>
+                                      <th scope="col"></th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row">1</th>
+                                      <td>Sanjay</td>
+                                      <td>Didwari(72)</td>
+                                      <td>16</td>
+                                      <td>2</td>
+                                      <td><button type="button" class="btn btn-primary">Delete</button></td>
+                                    </tr>
+                                    
+                                  </tbody>
+                              </table>
+                        </div>
+                     </div>
+<!-- Table end-->
+
+<div class="row mb-3">
+    <div class="col-md-12">
+        <div class="mb-3 row" id="heading">
+           <div class="heading text-center"> Details Of Land </div>
+        </div>
+    </div>
+</div>
+<div class="orange">
+<div class="row mb-3">
+    <div class="col-md-6">
+        <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-4 col-form-label">Rectangle/Khasra No.</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" id="inputPassword">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-4 col-form-label">Rectangle/Khasra No. Extn</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" id="inputPassword">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row mb-3">
+    <div class="col-md-6">
+        <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-4 col-form-label">Kila No.</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" id="inputPassword">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-4 col-form-label">Kila No. Extn</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" id="inputPassword">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row mb-3">
+    <div class="col-md-6">
+        <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-4 col-form-label">Kanal</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" id="inputPassword">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-4 col-form-label">Marla</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" id="inputPassword">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row mb-3">
+    <div class="col-md-6">
+        <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-4 col-form-label">Area (Acre)</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" id="inputPassword">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-4 col-form-label">Share</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" id="inputPassword">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row mb-3">
+    <div class="col-md-12">
+        <div class="mb-3 row" >
+           <div class="heading fw-bold"> Area Taken Details: </div>
+        </div>
+    </div>
+</div>
+<div class="row mb-3">
+    <div class="col-md-6">
+        <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-4 col-form-label">Kanal</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" id="inputPassword">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-4 col-form-label">Marla</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" id="inputPassword">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mb-3">
+    <div class="col-md-6">
+        <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-4 col-form-label">Area Taken(Acre)</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" id="inputPassword">
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+    <hr>
+
+
+
+<div class="blue"> 
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-4 col-form-label">Rectangle/Khasra No.</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="inputPassword">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-4 col-form-label">Rectangle/Khasra No. Extn</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="inputPassword">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-4 col-form-label">Kila No.</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="inputPassword">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-4 col-form-label">Kila No. Extn</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="inputPassword">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-4 col-form-label">Kanal</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="inputPassword">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-4 col-form-label">Marla</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="inputPassword">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-4 col-form-label">Area (Acre)</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="inputPassword">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-4 col-form-label">Share</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="inputPassword">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-md-12">
+            <div class="mb-3 row" >
+               <div class="heading fw-bold"> Area Taken Details: </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-4 col-form-label">Kanal</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="inputPassword">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-4 col-form-label">Marla</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="inputPassword">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-4 col-form-label">Area Taken(Acre)</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="inputPassword">
+                </div>
+            </div>
+        </div>
+    
+       
+    </div>
+    
+</div>
+<hr>
+                    <div class="d-grid gap-2 mb-3 d-md-flex justify-content-md-center">
+                        
+                        <button type="button" class="btn btn-primary">Save & Upadte</button>
+                        
+                    </div>
+                    <div class="d-grid gap-2 mb-3 d-md-flex justify-content-md-center">
+                        <button type="button" class="btn btn-primary">Back</button>
+                        <button type="button" class="btn btn-primary">Next</button>
+                        
+                    </div>
+
+
+
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+    <%- include('./includes/footer'); -%>
+    <script src="./js/main.js" type="module"></script>
+</body>
+</html>
